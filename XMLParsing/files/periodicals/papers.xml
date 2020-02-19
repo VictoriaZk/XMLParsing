@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<papers xmlns="https://example.com/periodicals"
+        xsi:noNamespaceSchemaLocation="periodicals.xsd"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!--newspapers quantity: 6-->
+
+    <newspaper issn="3423-543X">
+        <title>New York Times</title>
+        <volume>48</volume>
+        <colored>true</colored>
+        <monthly>true</monthly>
+        <glossy>false</glossy>
+    </newspaper>
+
+    <newspaper issn="3443-543x">
+        <title>Sun Times</title>
+        <volume>16</volume>
+        <colored>true</colored>
+        <monthly>true</monthly>
+        <glossy>false</glossy>
+    </newspaper>
+
+    <newspaper issn="4323-3230">
+        <title>Harvard gazette</title>
+        <volume>12</volume>
+        <colored>false</colored>
+        <monthly>true</monthly>
+        <glossy>false</glossy>
+    </newspaper>
+
+    <newspaper issn="3523-3420">
+        <title>Baltimore Times</title>
+        <volume>48</volume>
+        <colored>true</colored>
+        <monthly>true</monthly>
+        <glossy>false</glossy>
+    </newspaper>
+
+    <newspaper issn="2342-443X">
+        <title>Texas View</title>
+        <volume>48</volume>
+        <colored>false</colored>
+        <monthly>false</monthly>
+        <glossy>false</glossy>
+    </newspaper>
+
+    <newspaper issn="1232-3430">
+        <title>Kentucky Tribune</title>
+        <volume>48</volume>
+        <colored>true</colored>
+        <monthly>true</monthly>
+        <glossy>false</glossy>
+    </newspaper>
+
+    <!--magazines quantity: 6-->
+
+    <magazine issn="2345-432x">
+        <title>Hollywood Reporter</title>
+        <volume>86</volume>
+        <colored>true</colored>
+        <monthly>true</monthly>
+        <glossy>true</glossy>
+    </magazine>
+
+    <magazine issn="5436-4430">
+        <title>Cosmopolitan</title>
+        <volume>94</volume>
+        <colored>false</colored>
+        <monthly>false</monthly>
+        <glossy>false</glossy>
+    </magazine>
+
+    <magazine issn="0854-3320">
+        <title>Art in America</title>
+        <volume>94</volume>
+        <colored>true</colored>
+        <monthly>true</monthly>
+        <glossy>true</glossy>
+    </magazine>
+
+    <magazine issn="2342-342X">
+        <title>National Geographic</title>
+        <volume>140</volume>
+        <colored>true</colored>
+        <monthly>true</monthly>
+        <glossy>true</glossy>
+    </magazine>
+
+    <magazine issn="2343-1220">
+        <title>Cars</title>
+        <volume>64</volume>
+        <colored>true</colored>
+        <monthly>true</monthly>
+        <glossy>true</glossy>
+    </magazine>
+
+    <magazine issn="2345-543X">
+        <title>Men's Health</title>
+        <volume>94</volume>
+        <colored>true</colored>
+        <monthly>true</monthly>
+        <glossy>true</glossy>
+    </magazine>
+
+    <!--booklets quantity: 4-->
+
+    <booklet issn="none">
+        <title>Sounds of AUTUMN</title>
+        <volume>3</volume>
+        <colored>true</colored>
+        <monthly>false</monthly>
+        <glossy>true</glossy>
+    </booklet>
+
+    <booklet issn="none">
+        <title>ART House</title>
+        <volume>4</volume>
+        <colored>true</colored>
+        <monthly>false</monthly>
+        <glossy>true</glossy>
+    </booklet>
+
+    <booklet issn="none">
+        <title>Bikes 2019</title>
+        <volume>4</volume>
+        <colored>true</colored>
+        <monthly>false</monthly>
+        <glossy>true</glossy>
+    </booklet>
+
+    <booklet issn="none">
+        <title>OUR past</title>
+        <volume>5</volume>
+        <colored>false</colored>
+        <monthly>false</monthly>
+        <glossy>true</glossy>
+    </booklet>
+</papers>

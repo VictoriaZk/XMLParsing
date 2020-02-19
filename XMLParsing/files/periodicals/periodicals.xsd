@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://example.com/periodicals"
+        xmlns:tns="http://example.com/periodicals"
+        elementFormDefault="qualified">
+
+    <element name="periodicals">
+        <complexType>
+            <sequence>
+                <element ref="tns:periodical" minOccurs="16" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="periodical" type="tns:Periodical" abstract="true"/>
+    <element name="newspaper" type="tns:Newspaper" substitutionGroup="tns:periodical"/>
+    <element name="magazine" type="tns:Magazine" substitutionGroup="tns:periodical"/>
+    <element name="booklet" type="tns:Booklet" substitutionGroup="tns:periodical"/>
+
+    <complexType name="Periodical">
+        <sequence>
+            <element name="title" type="string"/>
+            <element name="volume" type="int"/>
+            <element name="monthly" type="boolean"/>
+            <element name="colored" type="boolean"/>
+        </sequence>
+        <attribute name="issn" type="tns:ISSN" use="required"/>
+    </complexType>
+
+    <complexType name="Newspaper">
+        <complexContent>
+            <extension base="tns:Periodical">
+                <sequence>
+                    <element name="glossy" type="boolean"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Magazine">
+        <complexContent>
+            <extension base="tns:Periodical">
+                <sequence>
+                    <element name="glossy" type="boolean"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Booklet">
+        <complexContent>
+            <extension base="tns:Periodical">
+                <sequence>
+                    <element name="glossy" type="boolean"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <simpleType name="ISSN">
+        <restriction base="ID">
+            <pattern value="(\\d){4}-(\\d){3}[\\dxX]"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="boolean">
+        <restriction base="boolean"/>
+    </simpleType>
+
+</schema>
